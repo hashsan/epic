@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+:root{
+  --font-family:'M PLUS Rounded 1c', sans-serif;
+}
+:root{
+  --back:#dedbd3;
+  --word:#0D0D0D;
+  --system:#736D63;
+  --impact:#f5f5f5;
+}
+
+/*color*/
+.sys,
+.system{
+  color:var(--system);
+}
+.word{
+  color:var(--word);
+}
+.impact{
+  background:var(--impact);  
+}
+
+html{
+  -webkit-text-size-adjust:100%;
+  font-family:var(--font-family);
+  font-weight:bold;
+  word-break:break-all;
+  line-height:1.6;  
+}
+
+html{
+ scroll-behavior: smooth;  
+}
+
+body{
+  background:var(--back);
+}
+
+h1,h2,h3,h4,h5,p,a{
+  margin:0;padding:0;
+}
+h1,h2{
+  font-size:1.6rem;
+}
+h3,h4{
+  font-size:1.3rem;
+}
+
+.c{text-align:center;}
+
+fieldset{
+  margin:0;  
+  box-sizing:border-box;
+  border:3px solid var(--word);
+  border-radius:3px;
+  width:480px;
+  margin:auto;
+  margin-top:0.25rem;
+}
+legend:before{content:'[';}
+legend:after{content:']';}
+
+.nav,nav{
+  color:var(--system);
+}
+
+a{
+  margin-right:0.5rem;
+  cursor:pointer;
+  text-decoration:underline;  
+  color:inherit;  
+}
+a:hover{
+  color:var(--word);
+}
+
+[contenteditable]{
+  outline:none;
+  padding:0.25rem;
+}
+
+pre,code,input,button,select{
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:bold;
+  outline:none;
+  padding:0;
+  margin:0;
+  border:unset;  
+}
+
+button,input{
+  background:unset;
+}
+button{
+  cursor:pointer;
+}
+input{
+  border-bottom:2px solid var(--word);
+  box-sizing:border-box;
+  padding:0.15rem;    
+}
+button{
+  color:var(--system);
+  border:2px solid var(--word);
+  border-radius:3px;
+  box-sizing:border-box;  
+  padding:0.15rem 0.5rem;    
+}
+button:hover{
+  color:var(--word);
+}
+button:active{
+  background:var(--impact);
+}
+
+
+.long{
+  height:60vh;
+}
