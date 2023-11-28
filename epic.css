@@ -10,6 +10,15 @@
   --impact:#f5f5f5;
 }
 
+/*color*/
+.sys,
+.system{
+  color:var(--system);
+}
+.word{
+  color:var(--word);
+}
+
 html{
   -webkit-text-size-adjust:100%;
   font-family:var(--font-family);
@@ -51,15 +60,18 @@ fieldset{
 }
 legend:before{content:'[';}
 legend:after{content:']';}
+
 nav{
   color:var(--system);
 }
-nav a{
+
+a{
   margin-right:0.5rem;
   cursor:pointer;
   text-decoration:underline;  
+  color:inherit;  
 }
-nav a:hover{
+a:hover{
   color:var(--word);
 }
 
